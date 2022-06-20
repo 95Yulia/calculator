@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+
+body {
+    font-family: 'Roboto', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #6299ff;
+}
+
+.output {
+    text-align: right;
+    height: 100px;
+    width: 290px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    padding: 5px;
+    overflow: auto;
+}
+
+.btns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: rgb(255, 255, 255);
+    height: calc(100% - 120px);
+    padding: 5px;
+    gap: 5px;
+}
+
+.btn {
+    font: inherit;
+    color: inherit;
+    padding: 0;
+    border-radius: 10px;
+    border: none;
+}
+
+.equals{
+    background-color: #00b1ff;
+    color: white;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+.operation {
+    background-color: rgb(210, 236, 255);
+    color: #00aeff;
+}
+
+.num{
+    background-color: rgb(224, 224, 224);
+}
+
+.zero {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.num:hover {
+    background-color: rgb(191, 191, 191);
+}
+
+.operation:hover {
+    background-color: rgb(194, 216, 234);
+}
+
+.equals:hover {
+    background-color: #0188c1;
+}
+
+.result {
+    color: rgba(167, 167, 167, 0.84);
+    font-size: 24px;
+}
+
+.input {
+    font-size: 24px;
+}
+
+.hover_operation {
+    background-color: rgb(194, 216, 234);
+}
+
+.hover_equals {
+    background-color: #0188c1;
+}
+
+.hover_num {
+    background-color: rgb(191, 191, 191);
+}
+
+button:focus-visible {
+    outline: none;
+}
